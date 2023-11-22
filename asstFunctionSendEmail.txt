@@ -1,0 +1,36 @@
+{
+    "name": "send_email",
+    "description": "Sends an email from a specified sender to a receiver using SMTP with SSL.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "sender_email": {
+                "type": "string",
+                "description": "dmohle@gmail.com"
+            },
+            "receiver_email": {
+                "type": "string",
+                "description": "dennis.mohle@fresnocitycollege.edu"
+            },
+            "password": {
+                "type": "string",
+                "description": "xxxx xxxx xxxx xxxx"
+            },
+            "subject": {
+                "type": "string",
+                "description": "Hello From an OpenAI Assistant and Python"
+            },
+            "body": {
+                "type": "string",
+                "description": "Hello from the assistant sending email message to Dennis Mohle."
+            }
+        },
+        "required": [
+            "sender_email",
+            "receiver_email",
+            "password",
+            "subject",
+            "body"
+        ]
+    }
+}
